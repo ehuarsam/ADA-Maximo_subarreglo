@@ -164,7 +164,7 @@ Kadane (complejidad O(n)) es la única solución de las tres que resulta viable 
 Para n = 10^8 se predijo que:
 
 | Algoritmo | Tiempo estimado |
-|---|---:|:---:|
+|---|---:|
 | O(n³) | 285 402 039 062 500 s |
 | O(n²) | 8 379 687.5 s |
 | Kadane O(n) | 0.475 s  |
