@@ -158,7 +158,7 @@ Como la predicción es menor a un minuto, esta fue la única implementación eje
 | | Tiempo |
 |---|---:|
 | Predicho | 0.475 s |
-| Medido | 0.647641 s |
+| Medido | 0.638917 s |
 
 ---
 
