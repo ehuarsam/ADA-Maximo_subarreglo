@@ -165,9 +165,9 @@ Para n = 10^8 se predijo que:
 
 | Algoritmo | Tiempo estimado |
 |---|---:|
-| O(n³) | 285 402 039 062 500 s |
-| O(n²) | 8 379 687.5 s |
-| Kadane O(n) | 0.475 s  |
+|O(n³)       | 285 402 039 062 500 s |
+|O(n²)       | 8 379 687.5 s |
+|Kadane O(n) | 0.475 s  |
 
 Aunque las tres soluciones producen el mismo resultado, la elección del algoritmo es fundamental cuando el tamaño de entrada es grande.
 
