@@ -61,15 +61,6 @@ La solución O(n²) aumenta aproximadamente 4 veces al duplicar n, lo cual coinc
 
 Finalmente, Kadane aumenta aproximadamente 2 veces al duplicar n, confirmando su comportamiento lineal O(n).
 
-Por lo tanto, las mediciones experimentales coinciden con los órdenes de crecimiento teóricos:
-
-```text
-O(n³) → razón ≈ 8
-O(n²) → razón ≈ 4
-O(n)  → razón ≈ 2
-```
-
----
 
 ## 3. Predicción para n = 10^8
 
@@ -106,8 +97,7 @@ La predicción es aproximadamente:
 ```text
 285 402 039 062 500 segundos
 ```
-
-Esta cantidad de tiempo es muy superior a un minuto, por lo que no se ejecutó esta versión para n = 10^8.
+Esta cantidad de tiempo es mayor a un minuto, por lo que no se ejecutó para n = 10^8.
 
 ### O(n²)
 
@@ -129,7 +119,7 @@ La predicción es aproximadamente:
 8 379 687.5 segundos
 ```
 
-Esto corresponde aproximadamente a 97 días, por lo que tampoco se ejecutó esta versión para n = 10^8.
+Como es mayor a un minuto, no se ejecutó para n = 10^8.
 
 ### O(n) - Kadane
 
@@ -152,6 +142,7 @@ La predicción es:
 ```
 
 Como la predicción es menor a un minuto, esta fue la única implementación ejecutada para n = 10^8.
+Esto ejecutado en ```Kadane-10^8.cpp```
 
 ### Predicho vs. medido (n = 10^8, solo Kadane)
 
@@ -162,27 +153,23 @@ Como la predicción es menor a un minuto, esta fue la única implementación eje
 
 ---
 
-## 4. Resultados y conclusiones
-
-Los resultados experimentales muestran claramente la diferencia entre las tres complejidades.
+## 4. Conclusiones
 
 La solución O(n³) presenta un crecimiento muy rápido. Al duplicar n, su tiempo aumenta aproximadamente 8 veces.
 
-La solución O(n²) es considerablemente más rápida que la cúbica, pero también se vuelve impracticable para tamaños muy grandes.
+La solución O(n²) es más rápida que la cúbica, sin embargo, se vuelve poco práctica para tamaños muy grandes.
 
-Kadane, con complejidad O(n), presenta un crecimiento lineal y es la única solución de las tres que resulta viable para un arreglo de tamaño 10^8.
-
-Las mediciones experimentales confirman los órdenes de crecimiento teóricos estudiados en clase.
+Kadane (complejidad O(n)) es la única solución de las tres que resulta viable para un arreglo de tamaño 10^8.
 
 Para n = 10^8 se predijo que:
 
-| Algoritmo | Tiempo estimado | ¿Se ejecuta? |
+| Algoritmo | Tiempo estimado |
 |---|---:|:---:|
-| O(n³) | 285 402 039 062 500 s | No |
-| O(n²) | 8 379 687.5 s | No |
-| Kadane O(n) | 0.475 s | Sí |
+| O(n³) | 285 402 039 062 500 s |
+| O(n²) | 8 379 687.5 s |
+| Kadane O(n) | 0.475 s  |
 
-La principal conclusión es que, aunque las tres soluciones producen el mismo resultado, la elección del algoritmo es fundamental cuando el tamaño de entrada es grande.
+Aunque las tres soluciones producen el mismo resultado, la elección del algoritmo es fundamental cuando el tamaño de entrada es grande.
 
 ---
 
